@@ -1,5 +1,9 @@
+require_relative 'operations/operations_with_files'
+
 module Library  
   class Reader
+    include OperationsWithFiles
+
     attr_accessor :name, :email, :city, :street, :house, :books_taken
     
     def initialize(name, info = {})
@@ -10,11 +14,13 @@ module Library
       @house  = info[:house]
 
       @books_taken = 0
+      # uncomment code below if need save to file on default after creating object
+      # save_to_file
     end  
 
     def to_s
-      "[Reader:] name: #{@name}, email: #{@email}, " +
-      "city: #{@city}, street: #{@street}, house: #{@house}."     
+      "READER: #{@name}; email: #{@email}; " +
+      "city: #{@city}; street: #{@street}; house: #{@house}"     
     end
       
   end

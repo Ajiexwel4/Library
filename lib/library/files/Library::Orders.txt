@@ -1,0 +1,7 @@
+ORDER: The "The Ruby Way" book ordered by Alexander Beldiyan; date of the order: Thu Oct 20 22:02:38 2016
+ORDER: The "Agile development RAILS4" book ordered by Alexander Beldiyan; date of the order: Thu Oct 20 22:02:38 2016
+ORDER: The "Agile development RAILS4" book ordered by Natalia; date of the order: Thu Oct 20 22:02:38 2016
+ORDER: The "True Development on Ruby on Rails" book ordered by Vladimir; date of the order: Thu Oct 20 22:02:38 2016
+ORDER: The "True Development on Ruby on Rails" book ordered by Vasiliy; date of the order: Thu Oct 20 22:02:38 2016
+ORDER: The "Agile development RAILS4" book ordered by Vasiliy; date of the order: Thu Oct 20 22:02:38 2016
+ORDER: The "The Ruby Way" book ordered by Vasiliy; date of the order: Thu Oct 20 22:02:38 2016

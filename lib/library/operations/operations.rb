@@ -9,5 +9,12 @@ module Operations
       self.send(name).delete(args)
       self.send(name)
     end
+
+    define_method "#{name}_from_file" do |collection|
+      File.open("library/files/Library::#{collection.capitalize}.txt", 'r') do |f|
+        f.each {|line| self.send(name) << line.chomp}
+      end
+      self.send(name) 
+    end
   end
 end

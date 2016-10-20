@@ -2,16 +2,19 @@ require_relative 'author'
 
 module Library
   class Book
+    include OperationsWithFiles
+    
     attr_accessor :title, :author
     
     def initialize(title, author)
       @title  = title
-      @author ||= Library::Author.new(author)
+      @author = author
+      # uncomment code below if need save to file on default after creating object
+      # save_to_file
     end
     
     def to_s
-      "Book: \"#{@title}\" Author: #{@author.name}"
+      "BOOK: \"#{@title}\"; #{@author.name}"
     end
   end
 end
-
