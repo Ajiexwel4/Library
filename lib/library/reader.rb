@@ -1,7 +1,6 @@
 require_relative 'operations/operations_with_files'
 
-module Library
-  # create readers
+module Library  
   class Reader
     include OperationsWithFiles
 
@@ -15,8 +14,7 @@ module Library
       @house  = info[:house]
 
       @books_taken = 0
-      # uncomment if need save to file on default after creating object
-      # save_to_file
+      # save_to_file # uncomment if you need to save data to file on default
     end
 
     def to_s

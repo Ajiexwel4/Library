@@ -1,7 +1,6 @@
 require_relative 'author'
 
-module Library
-  # create books
+module Library  
   class Book
     include OperationsWithFiles
 
@@ -9,9 +8,8 @@ module Library
 
     def initialize(title, author)
       @title  = title
-      @author = author
-      # uncomment if need save to file on default after creating object
-      # save_to_file
+      @author = author      
+      # save_to_file # uncomment if you need to save data to file on default
     end
 
     def to_s

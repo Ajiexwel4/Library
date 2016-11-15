@@ -29,8 +29,7 @@ book_ruby    = Library::Book.new('Agile development RAILS4',
 book_snitko  = Library::Book.new('True Development on Ruby on Rails',
                                  roman_snitko) # .save_to_file
 book_kruglov = Library::Book.new('Ruby', alex_kruglov) # .save_to_file
-book_carlson = Library::Book.new('True Development on Ruby on Rails',
-                                 lucas_carlson) # .save_to_file
+book_carlson = Library::Book.new('Ruby Cookbook', lucas_carlson) # .save_to_file
 
 # Readers
 reader_first  = Library::Reader.new('Alexander Beldiyan',
@@ -62,6 +61,7 @@ order_third = Library::Order.new(book_snitko, reader_third) # .save_to_file
 order_fourth = Library::Order.new(book_carlson, reader_fourth) # .save_to_file
 order_fourth2 = Library::Order.new(book_ruby, reader_fourth) # .save_to_file
 order_fourth3 = Library::Order.new(book_fulton, reader_fourth) # .save_to_file
+order_first3 = Library::Order.new(book_ruby, reader_first) # .save_to_file
 
 # Library
 library = Library::Main.new
@@ -81,6 +81,8 @@ library.add_authors(alex_kruglov)
 library.add_authors(lucas_carlson)
 library.add_orders(order_first)
 library.add_orders(order_first2)
+library.add_orders(order_first3)
+
 library.add_orders(order_second)
 library.add_orders(order_third)
 library.add_orders(order_fourth)
@@ -96,7 +98,7 @@ library.often_reader
 # task2
 library.most_popular_book
 # task3
-library.count_reader_most3_books
+library.count_readers_most3_books
 
 ## task4
 ## For each new objec use #save_to_file
