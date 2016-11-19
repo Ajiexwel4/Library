@@ -1,19 +1,15 @@
 require_relative 'author'
 
-module Library  
-  class Book
-    include OperationsWithFiles
+class Book
+  include DataManager
+  attr_accessor :title, :author
 
-    attr_accessor :title, :author
+  def initialize(title, author)
+    @title  = title
+    @author = author.name
+  end
 
-    def initialize(title, author)
-      @title  = title
-      @author = author      
-      # save_to_file # uncomment if you need to save data to file on default
-    end
-
-    def to_s
-      "BOOK: \"#{@title}\"; #{@author.name}"
-    end
+  def to_s
+    "#{@title}; #{@author}"
   end
 end

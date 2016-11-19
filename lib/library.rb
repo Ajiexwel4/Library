@@ -1,40 +1,36 @@
 require_relative 'library/order'
-require_relative 'library/operations/operations'
 
-module Library
-  class Main
-    include Operations
-    include OperationsWithFiles
+class Library
+  include DataManager
 
-    attr_accessor :authors, :books, :orders, :readers
+  attr_accessor :authors, :books, :orders, :readers
 
-    def initialize
-      @authors = []
-      @books   = []
-      @orders  = []
-      @readers = []
-    end
+  def initialize
+    @authors = []
+    @books   = []
+    @orders  = []
+    @readers = []
+  end
 
-    def often_reader
-      puts "Who often takes the book?"
-      puts @readers.sort_by(&:books_taken).last
-    end
+  def often_reader
+    puts 'Who often takes the book?'
+    puts @orders.group_by(&:reader).sort_by { |_reader, books| books.count }.last[0]
+  end
 
-    def most_popular_book
-      puts "What is the most popular book?"
-      puts rate_ordered_books.first.shift      
-    end
+  def most_popular_book
+    puts 'What is the most popular book?'
+    puts rate_ordered_books.last[0]
+  end
 
-    def count_readers_most3_books
-      puts 'How many people ordered one of the three most popular books?'
-      puts rate_ordered_books.take(3).inject(0) { |acc, book| acc + book[1] }.to_s + " people"      
-    end
+  def uniq_readers_most3_books
+    puts 'How many people ordered one of the three most popular books?'
+    all_orders_most3_books = rate_ordered_books.last(3).map { |book| book[1] }.flatten
+    puts all_orders_most3_books.map(&:reader).uniq.size
+  end
 
-    private
+  private
 
-    def rate_ordered_books      
-      books_count = @orders.uniq(&:to_s).each_with_object(Hash.new(0)) { |order, hash| hash[order.book] += 1 }      
-      books_count.sort_by { |_book, count| count }.reverse
-    end
+  def rate_ordered_books
+    @orders.group_by(&:book).sort_by { |_book, readers| readers.count }
   end
 end

@@ -1,20 +1,15 @@
-require_relative 'operations/operations_with_files'
+require_relative 'modules/data_manager'
 
-module Library  
-  class Author
-    include OperationsWithFiles
+class Author
+  include DataManager
+  attr_accessor :name, :biography
 
-    attr_accessor :name, :biography
+  def initialize(name, biography = '')
+    @name      = name
+    @biography = biography
+  end
 
-    def initialize(name, biography = '')
-      @name      = name
-      @biography = biography
-      
-      # save_to_file # uncomment if you need to save data to file on default
-    end
-
-    def to_s
-      "AUTHOR: #{@name}(#{@biography})"
-    end
+  def to_s
+    "#{@name}; #{@biography}"
   end
 end

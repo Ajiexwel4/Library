@@ -1,0 +1,4 @@
+Alexander; ajiex@meta.ua; Zhovty Vody; Shevchenko; 16
+Natalia; natasha1111@meta.ua; Zhovty Vody; Shevchenko; 11
+Vladimir; vlad1ddd@meta.ua; Zhovty Vody; Gagarina; 21
+Vasiliy; vasvas123@meta.ua; Zhovty Vody; Gagarina; 5

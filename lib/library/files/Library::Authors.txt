@@ -1,5 +1,0 @@
-AUTHOR: Hal Fulton(First programmed with Ruby in 1999)
-AUTHOR: Sam Ruby(Prominent software developer)
-AUTHOR: Roman Snitko(Programmer: Ruby, Dart, Javascript, Bitcoin)
-AUTHOR: Alexander Kruglov(Rubyist)
-AUTHOR: Lucas Carlson(Rubyist)

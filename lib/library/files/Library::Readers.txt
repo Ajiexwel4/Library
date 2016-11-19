@@ -1,4 +1,0 @@
-READER: Alexander Beldiyan; email: malolam1@meta.ua; city: Zhovty Vody; street: Shevchenko; house: 16
-READER: Natalia; email: natasha1111@meta.ua; city: Zhovty Vody; street: Shevchenko; house: 11
-READER: Vladimir; email: vlad1ddd@meta.ua; city: Zhovty Vody; street: Gagarina; house: 21
-READER: Vasiliy; email: vasvas123@meta.ua; city: Zhovty Vody; street: Gagarina; house: 5

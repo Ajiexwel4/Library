@@ -1,0 +1,8 @@
+The Ruby Way; Alexander; Sat Nov 19 16:27:16 2016
+Agile development RAILS4; Alexander; Sat Nov 19 16:27:16 2016
+Agile development RAILS4; Natalia; Sat Nov 19 16:27:16 2016
+True Development on Ruby on Rails; Vladimir; Sat Nov 19 16:27:16 2016
+Ruby Cookbook; Vasiliy; Sat Nov 19 16:27:16 2016
+Agile development RAILS4; Vasiliy; Sat Nov 19 16:27:16 2016
+The Ruby Way; Vasiliy; Sat Nov 19 16:27:16 2016
+Agile development RAILS4; Alexander; Sat Nov 19 16:27:16 2016
