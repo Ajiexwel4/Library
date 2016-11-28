@@ -1,0 +1,5 @@
+The Ruby Way; Hal Fulton
+Agile development RAILS4; Sam Ruby
+True Development on Ruby on Rails; Roman Snitko
+Ruby; Alexander Kruglov
+Ruby Cookbook; Lucas Carlson

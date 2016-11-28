@@ -1,0 +1,5 @@
+Hal Fulton; first programmed with Ruby in 1999
+Sam Ruby; prominent software developer
+Roman Snitko; programmer: Ruby, Dart, Javascript, Bitcoin
+Alexander Kruglov; rubyist
+Lucas Carlson; rubyist
